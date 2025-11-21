@@ -30,6 +30,8 @@ Cloud Application: https://huggingface.co/spaces/OishiLab/OpenMAP-T1<br>
 Submitted for publication in the **Human Brain Mapping**<br>
 
 # Docker Installation Instruction
+**If you are not using Docker, skip this phase and scroll down to Default Installation Instruction section below**
+
 1. Build the Docker Image
 
 In summary, this command creates a Docker image named "openmap-t1" based on the Dockerfile and files in your current directory.
