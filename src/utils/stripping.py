@@ -1,6 +1,7 @@
 import numpy as np
 import torch
 from scipy import ndimage
+from scipy.ndimage import binary_closing, binary_fill_holes, generate_binary_structure
 
 from utils.functions import normalize, reimburse_conform
 
@@ -84,6 +85,10 @@ def stripping(output_dir, basename, voxel, odata, data, ssnet, shift, device):
     # Fuse predictions by averaging across the three planes and apply threshold
     out_e = ((out_c + out_s + out_a) / 3) > 0.5
     out_e = out_e.cpu().numpy()
+
+    structure = generate_binary_structure(3, 2)
+    out_e = binary_closing(out_e, structure)
+    out_e = binary_fill_holes(out_e)
 
     # Apply the binary mask to extract the brain region
     stripped = original * out_e
