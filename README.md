@@ -4,17 +4,17 @@ Open resource for Multiple Anatomical structure Parcellation for T1-weighted bra
 
 ## OpenMAP-T1
 
-![Explain](media/Explain.png)
+<!-- ![Explain](media/Explain.png) -->
 
-![Explain](media/Application.png)
+<!-- ![Explain](media/Application.png) -->
 
-![Figure3](media/Representative.png)
+<!-- ![Figure3](media/Representative.png) -->
 
 [![](http://img.shields.io/badge/medRxiv-10.1101/2024.01.18.24301494-B31B1B.svg)](https://www.medrxiv.org/content/10.1101/2024.01.18.24301494v1)
 [![IEEE Xplore](https://img.shields.io/badge/Accepted-Human%20Brain%20Mapping-%2300629B%09)](https://onlinelibrary.wiley.com/journal/10970193)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fmfkxxZjChExnl5cHITYkNYgTu3MZ7Ql#scrollTo=xwZxyL5ewVNF)
-![Python 3.8](https://img.shields.io/badge/OpenMAP-T1-brightgreen.svg)
-[![Python 3.8](https://img.shields.io/badge/HuggingFace-Application-orange.svg)](https://huggingface.co/spaces/OishiLab/OpenMAP-T1)
+<!-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fmfkxxZjChExnl5cHITYkNYgTu3MZ7Ql#scrollTo=xwZxyL5ewVNF) -->
+<!-- ![Python 3.8](https://img.shields.io/badge/OpenMAP-T1-brightgreen.svg) -->
+<!-- [![Python 3.8](https://img.shields.io/badge/HuggingFace-Application-orange.svg)](https://huggingface.co/spaces/OishiLab/OpenMAP-T1) -->
 
 **OpenMAP-T1: A Rapid Deep-Learning Approach to Parcellate 280 Anatomical Regions to Cover the Whole Brain**<br>
 **Author**: [Kei Nishimaki](https://researchmap.jp/knishimaki?lang=en), [Kengo Onda](https://researchmap.jp/kengoonda?lang=en), [Kumpei Ikuta](https://scholar.google.com/citations?user=Q9h-OP8AAAAJ&hl=ja), [Jill Chotiyanonta](https://www.researchgate.net/profile/Jill-Chotiyanonta), [Yuto Uchida](https://researchmap.jp/uchidayuto), [Susumu Mori](https://www.hopkinsmedicine.org/profiles/details/susumu-mori), [Hitoshi Iyatomi](https://iyatomi-lab.info/english-top), [Kenichi Oishi](https://www.hopkinsmedicine.org/profiles/details/kenichi-oishi)<br>
@@ -23,13 +23,13 @@ The Russell H. Morgan Department of Radiology and Radiological Science, The John
 Department of Applied Informatics, Graduate School of Science and Engineering, Hosei University, Tokyo, Japan <br>
 The Richman Family Precision Medicine Center of Excellence in Alzheimer's Disease, Johns Hopkins University School of Medicine, Baltimore, MD, USA<br>
 
-**Abstract**: *This study introduces OpenMAP-T1, a deep learning-based method for rapid and accurate whole brain parcellation in T1-weighted brain MRI, aiming to overcome the limitations of conventional normalization-to-atlas-based approaches and multi-atlas label-fusion (MALF) techniques. Brain image parcellation is a fundamental process in neuroscientific and clinical research, enabling detailed analysis of specific cerebral regions. Normalization-to-atlas-based methods have been employed for this task, but they face limitations due to variations in brain morphology, especially in pathological conditions. The MALF teqhniques improved the accuracy of the image parcellation and robustness to variations in brain morphology but at the cost of high computational demand that requires lengthy processing time. OpenMAP-T1 integrates several convolutional neural network models across six phases: preprocessing, cropping, skull stripping, parcellation, hemisphere segmentation, and final merging. This process involves standardizing MRI images, isolating the brain tissue, and parcellating it into 280 anatomical structures that cover the whole brain, including detailed gray and white matter structures, while simplifying the parcellation processes and incorporating robust training to handle various scan types and conditions. The OpenMAP-T1 was tested on eight available open resources, including real-world clinical images, demonstrating robustness across different datasets with variations in scanner types, magnetic field strengths, and image processing techniques like defacing. Compared to existing methods, OpenMAP-T1 significantly reduced the processing time per image from several hours to less than 90 seconds without compromising accuracy. It was particularly effective in handling images with intensity inhomogeneity and varying head positions, conditions commonly seen in clinical settings. The adaptability of OpenMAP-T1 to a wide range of MRI datasets and robustness to various scan conditions highlight its potential as a versatile tool in neuroimaging.*
+<!-- **Abstract**: *This study introduces OpenMAP-T1, a deep learning-based method for rapid and accurate whole brain parcellation in T1-weighted brain MRI, aiming to overcome the limitations of conventional normalization-to-atlas-based approaches and multi-atlas label-fusion (MALF) techniques. Brain image parcellation is a fundamental process in neuroscientific and clinical research, enabling detailed analysis of specific cerebral regions. Normalization-to-atlas-based methods have been employed for this task, but they face limitations due to variations in brain morphology, especially in pathological conditions. The MALF teqhniques improved the accuracy of the image parcellation and robustness to variations in brain morphology but at the cost of high computational demand that requires lengthy processing time. OpenMAP-T1 integrates several convolutional neural network models across six phases: preprocessing, cropping, skull stripping, parcellation, hemisphere segmentation, and final merging. This process involves standardizing MRI images, isolating the brain tissue, and parcellating it into 280 anatomical structures that cover the whole brain, including detailed gray and white matter structures, while simplifying the parcellation processes and incorporating robust training to handle various scan types and conditions. The OpenMAP-T1 was tested on eight available open resources, including real-world clinical images, demonstrating robustness across different datasets with variations in scanner types, magnetic field strengths, and image processing techniques like defacing. Compared to existing methods, OpenMAP-T1 significantly reduced the processing time per image from several hours to less than 90 seconds without compromising accuracy. It was particularly effective in handling images with intensity inhomogeneity and varying head positions, conditions commonly seen in clinical settings. The adaptability of OpenMAP-T1 to a wide range of MRI datasets and robustness to various scan conditions highlight its potential as a versatile tool in neuroimaging.* -->
 
 Paper: https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.70063<br>
-Cloud Application: https://huggingface.co/spaces/OishiLab/OpenMAP-T1<br>
+<!-- Cloud Application: https://huggingface.co/spaces/OishiLab/OpenMAP-T1<br> -->
 Submitted for publication in the **Human Brain Mapping**<br>
 
-# Docker Installation Instruction
+<!-- # Docker Installation Instruction
 **If you are not using Docker, skip this phase and scroll down to Default Installation Instruction section below**
 
 1. Build the Docker Image
@@ -67,9 +67,10 @@ These are the command-line arguments passed to the application running inside th
    * ```-i INPUT_FOLDER```: Specifies the input folder path.
    * ```-o OUTPUT_FOLDER```: Specifies the output folder path.
    * ```-m MODEL_FOLDER```: Specifies the model folder path.
-Replace ```INPUT_FOLDER```, ```OUTPUT_FOLDER```, and ```MODEL_FOLDER``` with the appropriate directory names or paths that exist within the mounted ```/app``` directory.
+Replace ```INPUT_FOLDER```, ```OUTPUT_FOLDER```, and ```MODEL_FOLDER``` with the appropriate directory names or paths that exist within the mounted ```/app``` directory. -->
 
-# Default Installation Instruction
+<!-- # Default Installation Instruction -->
+# Installation Instruction
 **OpenMAP-T1c parcellates the whole brain into 274 anatomical regions based on JHU-atlas in 50 (sec/case).**
 
 0. install python and make virtual environment<br>
@@ -110,19 +111,22 @@ Using OpenMAP-T1 is straightforward. You can use it in any terminal on your linu
 ## Basic Usage
 Run the script from your terminal using:
 ```
-# Default
 python3 src/parcellation.py -i INPUT_FOLDER -o OUTPUT_FOLDER -m MODEL_FOLDER
 ```
-```
+<!-- ```
+# Default
+python3 src/parcellation.py -i INPUT_FOLDER -o OUTPUT_FOLDER -m MODEL_FOLDER
+``` -->
+<!-- ```
 # Docker
 docker run --rm -it -v "$(pwd):/app" openmap-t1 -i INPUT_FOLDER -o OUTPUT_FOLDER -m MODEL_FOLDER
-```
+``` -->
 * **-i INPUT_FOLDER**: Specifies the folder containing the input brain MRI images.
 * **-o OUTPUT_FOLDER**: Defines the folder where the results will be saved. This folder will be created automatically if it does not exist.
 * **-m MODEL_FOLDER**: Indicates the folder containing the pretrained models for processing.
-
+<!-- 
 ## Optional Faster Processing Steps
-OpenMAP-T1 now allows you to perform only specific processing steps using the following mutually exclusive flags. By specifying these options, OpenMAP-T1 skips unnecessary processing steps, which can significantly reduce overall processing time.
+OpenMAP-T1c now allows you to perform only specific processing steps using the following mutually exclusive flags. By specifying these options, OpenMAP-T1c skips unnecessary processing steps, which can significantly reduce overall processing time.
 
 * **Only Face Cropping**: If you only want to perform face cropping and skip the rest of the processing steps, use:
 ```
@@ -140,7 +144,7 @@ python3 parcellation.py -i INPUT_FOLDER -o OUTPUT_FOLDER -m MODEL_FOLDER --only-
 ```
 # Docker
 docker run --rm -it -v "$(pwd):/app" openmap-t1 -i INPUT_FOLDER -o OUTPUT_FOLDER -m MODEL_FOLDER --only-skull-stripping
-```
+``` -->
 
 ## Using Spesific GPU
 If you want to run the script on a specific GPU (for example, GPU 1), prepend the command with the ```CUDA_VISIBLE_DEVICES=N```.
@@ -201,8 +205,8 @@ MODEL_FOLDER/
 ```
 
 # Supplementary information
-![supplementary_level](media/Multilevel.png)
-The OpenMAP-T1c parcellates the entire brain into five hierarchical structural levels, with the coarsest level comprising eight structures and the finest level comprising 280 structures.
+<!-- ![supplementary_level](media/Multilevel.png) -->
+The OpenMAP-T1c parcellates the entire brain into five hierarchical structural levels, with the coarsest level comprising eight structures and the finest level comprising 274 structures.
 
 * For additional visualization and detailed analysis, you can also utilize [3D Slicer](https://www.slicer.org/). 3D Slicer is a free, open-source platform for medical image computing that provides robust tools for segmentation, registration, and 3D visualization, making it an excellent choice for exploring the parcellation maps generated by OpenMAP-T1c.
 
