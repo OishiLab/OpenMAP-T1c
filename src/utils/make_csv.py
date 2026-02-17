@@ -62,7 +62,7 @@ def make_csv(parcellation, output_dir, basename):
     df_Type1_level5 = (
         pd.read_table(csv_path, names=["number", "region"]).astype("str").set_index("number")
     )
-    for i in range(1, 275):
+    for i in range(1, 281):
         volume = np.count_nonzero(parcellation == i)
         df_Type1_level5.loc[str(i), basename] = volume
 
@@ -112,8 +112,8 @@ def make_csv(parcellation, output_dir, basename):
     )
 
     df = pd.read_csv(os.path.join(output_dir, f"csv/{basename}_Type1_Level5.csv")).iloc[:,1:]
-    sulcus = [249, 250, 251, 252, 255, 256]
-    sylvianFissure = [253, 254]
+    sulcus =  [248, 249, 250, 251, 252, 253, 254, 255, 258, 259, 260, 261]
+    sylvianFissure = [256, 257]
     sum_sulcus = df.iloc[0, sulcus].sum()
     sum_syl = df.iloc[0, sylvianFissure].sum()
     syl_ratio = sum_syl / sum_sulcus if sum_sulcus != 0 else None
