@@ -27,7 +27,7 @@ The Richman Family Precision Medicine Center of Excellence in Alzheimer's Diseas
 
 Paper: https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.70063<br>
 <!-- Cloud Application: https://huggingface.co/spaces/OishiLab/OpenMAP-T1<br> -->
-Submitted for publication in the **Human Brain Mapping**<br>
+
 
 <!-- # Docker Installation Instruction
 **If you are not using Docker, skip this phase and scroll down to Default Installation Instruction section below**
